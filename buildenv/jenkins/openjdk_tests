@@ -264,7 +264,6 @@ timestamps{
         } 
     } else {
         if (PLATFORM_MAP.containsKey(params.PLATFORM)) {
-            env.EXTRA_OPTIONS = params.EXTRA_OPTIONS ? params.EXTRA_OPTIONS : ""
             env.BUILD_LIST = params.BUILD_LIST ? params.BUILD_LIST : ""
             SPEC = PLATFORM_MAP[params.PLATFORM]["SPEC"]
             dockerAgents = PLATFORM_MAP[params.PLATFORM]["DockerAgents"] ? PLATFORM_MAP[params.PLATFORM]["DockerAgents"] : []
