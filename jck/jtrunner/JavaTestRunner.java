@@ -403,7 +403,7 @@ public class JavaTestRunner {
 		// taking dumps for OutOfMemory.
 		if (isIbmJvm()) { 
 //			suppressOutOfMemoryDumpOptions = " -Xdump:system:none -Xdump:system:events=gpf+abort+traceassert+corruptcache -Xdump:snap:none -Xdump:snap:events=gpf+abort+traceassert+corruptcache -Xdump:java:none -Xdump:java:events=gpf+abort+traceassert+corruptcache -Xdump:heap:none -Xdump:heap:events=gpf+abort+traceassert+corruptcache"; 
-			suppressOutOfMemoryDumpOptions = " -Xdump:system+java:events=throw+uncaught,filter=java/lang/NullPointerException#javasoft/sqe/tests/api/java/util/stream/Stream/StreamAssert.checkElementsRegardingOrder"
+			suppressOutOfMemoryDumpOptions = ' -Xdump:system+java:events=throw+uncaught,filter=java/lang/NullPointerException#javasoft/sqe/tests/api/java/util/stream/Stream/StreamAssert.checkElementsRegardingOrder'
 		}
 
 
